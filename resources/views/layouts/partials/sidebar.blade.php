@@ -100,7 +100,7 @@
             </div>
         </div>
         @if(auth()->user()?->hasRole('admin_bank_sampah') || auth()->user()?->hasRole('admin_rw'))
-        <div>
+        <!-- <div>
             <p class="px-3 mb-2 text-[10px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">Audit & Kontrol</p>
             <div class="space-y-1">
                 <x-sidebar-link href="/bank-sampah/monitoring" :active="request()->is('bank-sampah/monitoring*')">
@@ -108,7 +108,7 @@
                     Monitoring Audit
                 </x-sidebar-link>
             </div>
-        </div>
+        </div> -->
         @endif
         @endrole
 

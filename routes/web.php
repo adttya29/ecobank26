@@ -51,9 +51,9 @@ Route::get('/bank-sampah/dashboard', [DashboardController::class, 'bankSampah'])
     ->middleware(['auth', 'permission:view_waste_bank'])->name('bank-sampah.dashboard');
 
 // Bank Sampah Monitoring Audit Dashboard
-Route::get('/bank-sampah/monitoring', [\App\Http\Controllers\BankSampahMonitoringController::class, 'index'])
-    ->middleware(['auth', 'role:admin_bank_sampah|admin_rw'])
-    ->name('bank-sampah.monitoring');
+// Route::get('/bank-sampah/monitoring', [\App\Http\Controllers\BankSampahMonitoringController::class, 'index'])
+//     ->middleware(['auth', 'role:admin_bank_sampah|admin_rw'])
+//     ->name('bank-sampah.monitoring');
 
 // Warga dashboard - redirect to Bank Sampah dashboard
 Route::redirect('/warga/dashboard', '/bank-sampah/dashboard')->name('warga.dashboard');
